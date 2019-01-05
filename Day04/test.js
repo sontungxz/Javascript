@@ -1,41 +1,16 @@
-function arrayToList(arr) {
-    var list = null;
-  
-    for (var i = arr.length - 1; i >= 0; i--) {
-      list = { value: arr[i], rest: list };
-    }
-  
-    return list;
-  }
-  console.log(arrayToList([10, 20]));
-  
-  function listToArray(list) {
-    var arr = [];
-  
-    while (list) {
-      arr.push(list.value);
-      list = list.rest;
-    }
-    return arr;
-  }
-  console.log(listToArray(arrayToList([10, 20, 30])));
-  
-  function prepend(value, list) {
-    var pre = { value: value, rest: list };
-    return pre;
-  }
-  console.log(prepend(10, prepend(20, null)));
-  
-  function nth(list, num) {
-    debugger;
-  
-    if (!list) {
-      return undefined;
-    } else if (num === 0) {
-      return list.value;
-    } else {
-      return nth(list.rest, nuam - 1);
+//tạo ma trận rộng hình kim cương
+//xếp các phần tử từ ma trận n x n vào theo quy luật
+//tổng của hàng và cột của phần tử đó là hàng của ma trận kim cương.
+
+function AntiDiag(mat) {
+  debugger;
+  var res = [];
+  var rowlen = mat.length * 2 - 1;
+
+  for (let i = 0; i < mat.length; i += 1) {
+    for (let j = 0; j < mat.length; j += 1) {
+      res = res[i + J].push(mat[i][j]);
     }
   }
-  console.log(nth(arrayToList([10, 20, 30]), 1));
-  
+}
+console.log(AntiDiag([[1, 2, 3][(4, 5, 6)][(7, 8, 9)]]));

@@ -40,4 +40,4 @@ function hotelBookingPossible(arrival, depature, rooms) {
 // den[i] < di[j] can phong, tang bien dem room + 1, tang i + 1
 // den[i] >= di[j], room -= 1; j += 1
 //
-hotelBookingPossible([1, 3, 5], [2, 6, 8], 1);
+console.log(hotelBookingPossible([1, 3, 5], [2, 6, 8], 1));
