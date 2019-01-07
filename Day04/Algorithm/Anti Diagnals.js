@@ -7,6 +7,7 @@ function AntiDiag(mat) {
   var res = [];
 
   for (let i = 0; i < 2 * mat.length - 1; i += 1) {
+    
     res.push([]);
   }
 
